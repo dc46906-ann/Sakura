@@ -1,0 +1,42 @@
+LIBROS Y TINTA - VERSIÓN SENCILLA
+=================================
+
+QUÉ HAY EN LA CARPETA
+  index.html  -> el contenido de la página
+  styles.css  -> el diseño (colores, tamaños, posiciones)
+  script.js   -> el carrito (ya está hecho, NO lo modifiques)
+  img/        -> las imágenes
+
+CÓMO ABRIRLA
+  1. En VS Code: Archivo -> Abrir carpeta -> elige "libreria-sencilla".
+  2. Clic derecho en index.html -> "Open with Live Server"
+     (si no aparece, instala la extensión "Live Server").
+  3. Cada vez que guardes con Ctrl + S, la página se actualiza sola.
+
+CÓMO FUNCIONA EL CARRITO
+  Al darle "Agregar al carrito" a un libro, el carrito baja del menú, se anota
+  el libro, se suma el total y el 🛒 muestra cuántos libros llevas.
+  Con el botón 🛒 se muestra u oculta el carrito.
+
+LO QUE NO SE CAMBIA (el carrito lo necesita)
+  - En cada tarjeta:  data-titulo, data-precio y un botón con class="agregar"
+  - El precio en data-precio va SIN el signo $
+  - Cada data-titulo debe ser DIFERENTE
+  - Los id:  boton-carrito, contador, carrito, lista, total, vaciar
+  - La línea  <script src="script.js" defer></script>  en el <head>
+
+SI EL CARRITO NO FUNCIONA
+  Presiona F12 -> pestaña Console -> busca el mensaje en rojo.
+  - Total "NaN"           -> data-precio tiene el signo $
+  - Dos libros se juntan  -> data-titulo repetido
+  - No pasa nada al clic  -> falta el <script> o un id está mal escrito
+
+RETOS (de fácil a difícil)
+  1. Cambia los colores de :root y mira qué cambia.
+  2. Cambia la portada y el texto de la portada.
+  3. Agrega una tarjeta nueva con tu libro o producto favorito.
+  4. Cambia translateY(-6px) en .tarjeta:hover por otro valor.
+  5. Cambia el ancho del carrito (width: 300px) o hazlo salir por la izquierda (left en vez de right).
+  6. Prueba la página en modo celular (F12 + ícono del celular) y arregla lo que se vea mal.
+  7. Agrega una sección "Ubicación" con un mapa de Google Maps (<iframe>).
+  8. Agrega una etiqueta de oferta con position: absolute.
